@@ -67,6 +67,8 @@ When referencing this paper and dataset, please use the following Bibtex citatio
 * [Amazon's Mechanical Turk](https://www.mturk.com)
 
 # Classes of sound events
+The soundscapes in this dataset contain the following classes of sound events:
+
 * *car horn honking*
 * *dog barking*
 * *engine idling*
