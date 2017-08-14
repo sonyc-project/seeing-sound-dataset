@@ -66,7 +66,7 @@ When referencing this paper and dataset, please use the following Bibtex citatio
 * [CrowdCurio](https://www.crowdcurio.com)
 * [Amazon's Mechanical Turk](https://www.mturk.com)
 
-# Sound classes
+# Classes of sound events
 * *car horn honking*
 * *dog barking*
 * *engine idling*
