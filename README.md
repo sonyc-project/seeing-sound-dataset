@@ -12,10 +12,10 @@ In this dataset, we varied the soundscape complexity along two dimensions: maxim
 There are 60 soundscape audio files and 60 corresponding annotation files.
 
 ## Audio files
-The audio files are in WAV format and are named as follows: `soundscape-<soundscape_id>_m<max_polyphony_level>_g<gini_polyphony_level>.<wav>`, e.g. `soundscape-0-m0-g0.wav`
+The audio files are in WAV format and are named as follows: `soundscape-<soundscape_id>_m<max_polyphony_level>_g<gini_polyphony_level>.wav`, e.g. `soundscape-0-m0-g0.wav`
 
 ## Annotation files
-The anotation files are in JAMS format and are named as follows: `soundscape-<soundscape_id>_m<max_polyphony_level>_g<gini_polyphony_level>.<jams>`, e.g. `soundscape-0-m0-g0.jams`, the annotation file for the soundscape in `soundscape-0-m0-g0.wav`
+The anotation files are in JAMS format and are named as follows: `soundscape-<soundscape_id>_m<max_polyphony_level>_g<gini_polyphony_level>.jams`, e.g. `soundscape-0-m0-g0.jams`, the annotation file for the soundscape in `soundscape-0-m0-g0.wav`
 
 JAMS is a JSON-based audio annotation format. For details about this format and JAMS-specific reading and writing tools, refer to http://pythonhosted.org/jams/
 
