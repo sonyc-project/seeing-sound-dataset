@@ -1,0 +1,5797 @@
+{
+  "sandbox": {
+    "slice": [
+      {
+        "start_time": 1, 
+        "end_time": 11
+      }
+    ]
+  }, 
+  "annotations": [
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "trim": [
+          {
+            "start_time": 1, 
+            "trim_start": 1, 
+            "end_time": 11, 
+            "trim_end": 11
+          }
+        ], 
+        "scaper": {
+          "allow_repeated_source": false, 
+          "ref_db": -15, 
+          "fade_out_len": 0.01, 
+          "fg_labels": [
+            "car_horn_honking", 
+            "dog_barking", 
+            "engine_idling", 
+            "gun_shooting", 
+            "jackhammer_drilling", 
+            "music_playing", 
+            "people_shouting", 
+            "people_talking", 
+            "siren_wailing"
+          ], 
+          "n_events": 1, 
+          "fg_path": "audio/", 
+          "allow_repeated_label": false, 
+          "polyphony_max": 1, 
+          "protected_labels": [
+            "gun_shooting"
+          ], 
+          "polyphony_gini": 0.17982474090592615, 
+          "bg_labels": [
+            "harbour", 
+            "residential", 
+            "room", 
+            "noise"
+          ], 
+          "bg_path": "audio/background/", 
+          "n_channels": 1, 
+          "duration": 10.0, 
+          "bg_spec": [
+            [
+              [
+                "const", 
+                "noise"
+              ], 
+              [
+                "const", 
+                "audio/background/noise/brownian.wav"
+              ], 
+              [
+                "uniform", 
+                0, 
+                20
+              ], 
+              [
+                "const", 
+                0
+              ], 
+              [
+                "const", 
+                12.0
+              ], 
+              [
+                "const", 
+                0
+              ], 
+              "background"
+            ]
+          ], 
+          "reverb": 0.2, 
+          "fg_spec": [
+            [
+              [
+                "choose", 
+                []
+              ], 
+              [
+                "choose", 
+                []
+              ], 
+              [
+                "const", 
+                0
+              ], 
+              [
+                "uniform", 
+                0, 
+                10
+              ], 
+              [
+                "uniform", 
+                1, 
+                10
+              ], 
+              [
+                "uniform", 
+                3, 
+                9
+              ], 
+              "foreground"
+            ]
+          ], 
+          "fade_in_len": 0.01
+        }, 
+        "slice": [
+          {
+            "start_time": 1, 
+            "slice_start": 1, 
+            "end_time": 11, 
+            "slice_end": 11
+          }
+        ]
+      }, 
+      "time": 0, 
+      "duration": 10, 
+      "annotation_metadata": {
+        "annotation_tools": "Scaper v0.1.0", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {}, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "program"
+      }, 
+      "data": [
+        {
+          "duration": 10.0, 
+          "confidence": 1.0, 
+          "value": {
+            "source_time": 4.527740895920827, 
+            "event_time": 0.0, 
+            "label": "noise", 
+            "event_duration": 10.0, 
+            "source_file": "audio/background/noise/brownian.wav", 
+            "snr": 0, 
+            "role": "background"
+          }, 
+          "time": 0.0
+        }, 
+        {
+          "duration": 1.7966220000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "source_time": 0, 
+            "event_time": 8.203378, 
+            "smm1r": 9.2, 
+            "label": "music_playing", 
+            "event_duration": 1.7966220000000002, 
+            "source_file": "audio/music_playing/5_music_trio.wav", 
+            "snr": 9.5, 
+            "role": "foreground"
+          }, 
+          "time": 8.203378
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 10.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.3991, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 6, 
+          "gender": "Male", 
+          "musical_instrument_experience": 2, 
+          "age": 31, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 369
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.723667, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.723666788280001, 
+            "proximity": "near", 
+            "event_time": 8.2214066195, 
+            "label": "music_playing"
+          }, 
+          "time": 8.221407000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 6.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.282683333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Male", 
+          "musical_instrument_experience": 3, 
+          "age": 27, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 197
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.781276, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.781275890629999, 
+            "proximity": "near", 
+            "event_time": 8.18856151616, 
+            "label": "music_playing"
+          }, 
+          "time": 8.188562000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 6.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.659533333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 4, 
+          "gender": "Male", 
+          "musical_instrument_experience": 3, 
+          "age": 25, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 402
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.698501, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6985006325, 
+            "proximity": "near", 
+            "event_time": 8.27141155758, 
+            "label": "music_playing"
+          }, 
+          "time": 8.271412
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 8.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.599316666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Female", 
+          "musical_instrument_experience": 2, 
+          "age": 28, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 128
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.698647, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6986474936500002, 
+            "proximity": "near", 
+            "event_time": 8.27969656172, 
+            "label": "music_playing"
+          }, 
+          "time": 8.279697
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 5.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.766783333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Female", 
+          "musical_instrument_experience": 7, 
+          "age": 52, 
+          "sound_labeling_experience": 3, 
+          "participant_id": 423
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.657076, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6570756117900007, 
+            "proximity": "far", 
+            "event_time": 8.31283657829, 
+            "label": "music_playing"
+          }, 
+          "time": 8.312837
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 7.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.8264166666670001, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 4, 
+          "gender": "Male", 
+          "musical_instrument_experience": 3, 
+          "age": 31, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 429
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7729860000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7729856464699996, 
+            "proximity": "far", 
+            "event_time": 8.22170153273, 
+            "label": "music_playing"
+          }, 
+          "time": 8.221702
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 3.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.6036333333330001, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 4, 
+          "gender": "Female", 
+          "musical_instrument_experience": 4, 
+          "age": 37, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 440
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.769489, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7694892931300004, 
+            "proximity": "near", 
+            "event_time": 8.23051070687, 
+            "label": "music_playing"
+          }, 
+          "time": 8.230511
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 6.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.7198166666699999, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Male", 
+          "musical_instrument_experience": 6, 
+          "age": 32, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 441
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.43198, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.4319798924599993, 
+            "proximity": "near", 
+            "event_time": 8.25587805368, 
+            "label": "music_playing"
+          }, 
+          "time": 8.255878000000001
+        }, 
+        {
+          "duration": 0.46199, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 0.4619901296000002, 
+            "proximity": "far", 
+            "event_time": 9.52441728548, 
+            "label": "people_shouting"
+          }, 
+          "time": 9.524417000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 2.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.26325, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Male", 
+          "musical_instrument_experience": 1, 
+          "age": 37, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 446
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.706487, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7064868770100006, 
+            "proximity": "far", 
+            "event_time": 8.25512912795, 
+            "label": "music_playing"
+          }, 
+          "time": 8.255129
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 9.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.545916666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Female", 
+          "musical_instrument_experience": 3, 
+          "age": 71, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 449
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.863026, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.8630257517899995, 
+            "proximity": "far", 
+            "event_time": 8.13697424821, 
+            "label": "music_playing"
+          }, 
+          "time": 8.136974
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 10.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.1015833333299998, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 4, 
+          "gender": "Female", 
+          "musical_instrument_experience": 5, 
+          "age": 31, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 454
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.720271, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7202705278600003, 
+            "proximity": "near", 
+            "event_time": 8.27149223985, 
+            "label": "music_playing"
+          }, 
+          "time": 8.271492
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 9.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 2.22335, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Female", 
+          "musical_instrument_experience": 7, 
+          "age": 48, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 238
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.706852, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.706851931320001, 
+            "proximity": "near", 
+            "event_time": 8.28383906379, 
+            "label": "music_playing"
+          }, 
+          "time": 8.283839
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 7.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.8297, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Female", 
+          "musical_instrument_experience": 3, 
+          "age": 27, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 470
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.852864, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.8528635045600002, 
+            "proximity": "near", 
+            "event_time": 8.14713649544, 
+            "label": "music_playing"
+          }, 
+          "time": 8.147136
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 1.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.975533333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Female", 
+          "musical_instrument_experience": 2, 
+          "age": 44, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 477
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6871630000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6871634217100002, 
+            "proximity": "near", 
+            "event_time": 8.31283657829, 
+            "label": "music_playing"
+          }, 
+          "time": 8.312837
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 6.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.22818333333299998, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Female", 
+          "musical_instrument_experience": 6, 
+          "age": 39, 
+          "sound_labeling_experience": 3, 
+          "participant_id": 486
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7068210000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7068213186400012, 
+            "proximity": "near", 
+            "event_time": 8.27969656172, 
+            "label": "music_playing"
+          }, 
+          "time": 8.279697
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 2.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.4438, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Male", 
+          "musical_instrument_experience": 1, 
+          "age": 25, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 526
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.691624, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.691624161330001, 
+            "proximity": "far", 
+            "event_time": 8.27546298405, 
+            "label": "music_playing"
+          }, 
+          "time": 8.275463
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 2.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.7397, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Female", 
+          "musical_instrument_experience": 2, 
+          "age": 34, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 529
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7234230000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7234231574900019, 
+            "proximity": "near", 
+            "event_time": 8.26312655344, 
+            "label": "music_playing"
+          }, 
+          "time": 8.263127
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 9.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.705083333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 4, 
+          "gender": "Male", 
+          "musical_instrument_experience": 5, 
+          "age": 26, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 548
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.8648900000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.8648897079100006, 
+            "proximity": "near", 
+            "event_time": 8.09678968928, 
+            "label": "music_playing"
+          }, 
+          "time": 8.09679
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 4.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.6884166666670001, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Female", 
+          "musical_instrument_experience": 3, 
+          "age": 38, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 555
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.764742, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.76474207357, 
+            "proximity": "not sure", 
+            "event_time": 8.23286292982, 
+            "label": "music_playing"
+          }, 
+          "time": 8.232863
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 6.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.53445, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Female", 
+          "musical_instrument_experience": 6, 
+          "age": 23, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 562
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.9139000000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.9138995592299999, 
+            "proximity": "far", 
+            "event_time": 8.04771644573, 
+            "label": "music_playing"
+          }, 
+          "time": 8.047716000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 1.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 2.72466666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Male", 
+          "musical_instrument_experience": 1, 
+          "age": 44, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 570
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.681856, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.68185584093, 
+            "proximity": "near", 
+            "event_time": 8.22998653687, 
+            "label": "music_playing"
+          }, 
+          "time": 8.229987000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 5.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.861, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Male", 
+          "musical_instrument_experience": 1, 
+          "age": 34, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 574
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.707157, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7071573824899993, 
+            "proximity": "near", 
+            "event_time": 8.29284261751, 
+            "label": "music_playing"
+          }, 
+          "time": 8.292843000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 10.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.3506, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 6, 
+          "gender": "Male", 
+          "musical_instrument_experience": 1, 
+          "age": 26, 
+          "sound_labeling_experience": 5, 
+          "participant_id": 583
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.739926, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7399256532100011, 
+            "proximity": "near", 
+            "event_time": 8.22998653687, 
+            "label": "music_playing"
+          }, 
+          "time": 8.229987000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 3.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.458133333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Male", 
+          "musical_instrument_experience": 2, 
+          "age": 22, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 612
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7813510000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7813506739200005, 
+            "proximity": "near", 
+            "event_time": 8.18856151616, 
+            "label": "music_playing"
+          }, 
+          "time": 8.188562000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 1.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.676983333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 4, 
+          "gender": "Male", 
+          "musical_instrument_experience": 7, 
+          "age": 42, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 161
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.706736, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7067358223900015, 
+            "proximity": "near", 
+            "event_time": 8.26312655344, 
+            "label": "music_playing"
+          }, 
+          "time": 8.263127
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 7.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.993583333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Male", 
+          "musical_instrument_experience": 3, 
+          "age": 33, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 652
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7407890000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7407892956600008, 
+            "proximity": "not sure", 
+            "event_time": 8.254029427799999, 
+            "label": "music_playing"
+          }, 
+          "time": 8.254029000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 8.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.752683333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Female", 
+          "musical_instrument_experience": 4, 
+          "age": 36, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 684
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.8165580000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.8165575480699978, 
+            "proximity": "far", 
+            "event_time": 8.142069331050001, 
+            "label": "music_playing"
+          }, 
+          "time": 8.142069000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 4.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.775, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Female", 
+          "musical_instrument_experience": 2, 
+          "age": 36, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 716
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.774577, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7745769383999992, 
+            "proximity": "far", 
+            "event_time": 8.180909230060001, 
+            "label": "music_playing"
+          }, 
+          "time": 8.180909
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 8.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.254433333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Male", 
+          "musical_instrument_experience": 1, 
+          "age": 29, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 153
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7067690000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7067693358899998, 
+            "proximity": "near", 
+            "event_time": 8.27969656172, 
+            "label": "music_playing"
+          }, 
+          "time": 8.279697
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 4.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.48593333333300004, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Male", 
+          "musical_instrument_experience": 2, 
+          "age": 42, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 831
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 2.171811, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 2.1718105477800016, 
+            "proximity": "near", 
+            "event_time": 7.814608119439999, 
+            "label": "music_playing"
+          }, 
+          "time": 7.814608000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 1.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.36473333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Female", 
+          "musical_instrument_experience": 3, 
+          "age": 31, 
+          "sound_labeling_experience": 3, 
+          "participant_id": 845
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.673537, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6735366859000003, 
+            "proximity": "far", 
+            "event_time": 8.238741755980001, 
+            "label": "people_shouting"
+          }, 
+          "time": 8.238742
+        }, 
+        {
+          "duration": 1.6736460000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6736456200699994, 
+            "proximity": "not sure", 
+            "event_time": 8.296266570010001, 
+            "label": "music_playing"
+          }, 
+          "time": 8.296267
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 7.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.84256666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 7, 
+          "gender": "Female", 
+          "musical_instrument_experience": 3, 
+          "age": 22, 
+          "sound_labeling_experience": 7, 
+          "participant_id": 840
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.780547, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.780546675010001, 
+            "proximity": "near", 
+            "event_time": 8.219453324989999, 
+            "label": "music_playing"
+          }, 
+          "time": 8.219453
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 6.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.4384, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Male", 
+          "musical_instrument_experience": 2, 
+          "age": 27, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 861
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.691553, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6915529846300004, 
+            "proximity": "near", 
+            "event_time": 8.27833431893, 
+            "label": "music_playing"
+          }, 
+          "time": 8.278334000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 3.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.6713666666670001, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Male", 
+          "musical_instrument_experience": 2, 
+          "age": 26, 
+          "sound_labeling_experience": 3, 
+          "participant_id": 863
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.749497, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7494970952199989, 
+            "proximity": "near", 
+            "event_time": 8.24520832662, 
+            "label": "music_playing"
+          }, 
+          "time": 8.245208
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 4.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.8956, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Male", 
+          "musical_instrument_experience": 5, 
+          "age": 26, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 870
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7329960000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.73299599952, 
+            "proximity": "near", 
+            "event_time": 8.23691619056, 
+            "label": "music_playing"
+          }, 
+          "time": 8.236916
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 3.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.67343333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Female", 
+          "musical_instrument_experience": 2, 
+          "age": 30, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 886
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6499480000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6499475728100013, 
+            "proximity": "near", 
+            "event_time": 8.31996461727, 
+            "label": "music_playing"
+          }, 
+          "time": 8.319965
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 10.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.834916666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Male", 
+          "musical_instrument_experience": 5, 
+          "age": 25, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 909
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.8232380000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.8232378746200002, 
+            "proximity": "near", 
+            "event_time": 8.14254208406, 
+            "label": "music_playing"
+          }, 
+          "time": 8.142542
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 2.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.571533333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 7, 
+          "gender": "Male", 
+          "musical_instrument_experience": 7, 
+          "age": 30, 
+          "sound_labeling_experience": 5, 
+          "participant_id": 910
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.774272, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7742722454799988, 
+            "proximity": "near", 
+            "event_time": 8.195615058080001, 
+            "label": "music_playing"
+          }, 
+          "time": 8.195615
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 7.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.31278333333299996, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Male", 
+          "musical_instrument_experience": 3, 
+          "age": 29, 
+          "sound_labeling_experience": 6, 
+          "participant_id": 918
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.723554, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7235542903700019, 
+            "proximity": "far", 
+            "event_time": 8.26312655344, 
+            "label": "music_playing"
+          }, 
+          "time": 8.263127
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 2.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.6985333333329999, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 4, 
+          "gender": "Male", 
+          "musical_instrument_experience": 1, 
+          "age": 23, 
+          "sound_labeling_experience": 3, 
+          "participant_id": 923
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.715071, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7150706407800005, 
+            "proximity": "near", 
+            "event_time": 8.2548415493, 
+            "label": "music_playing"
+          }, 
+          "time": 8.254842
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 1.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.055, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Male", 
+          "musical_instrument_experience": 5, 
+          "age": 22, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 922
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7069580000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7069584202699986, 
+            "proximity": "near", 
+            "event_time": 8.25306574332, 
+            "label": "music_playing"
+          }, 
+          "time": 8.253066
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 4.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.67275, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 4, 
+          "gender": "Female", 
+          "musical_instrument_experience": 4, 
+          "age": 36, 
+          "sound_labeling_experience": 3, 
+          "participant_id": 940
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.731878, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.73187773231, 
+            "proximity": "not sure", 
+            "event_time": 8.22980166488, 
+            "label": "music_playing"
+          }, 
+          "time": 8.229802000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 5.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.31, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Male", 
+          "musical_instrument_experience": 4, 
+          "age": 37, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 955
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7315720000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7315720959600007, 
+            "proximity": "near", 
+            "event_time": 8.26312655344, 
+            "label": "music_playing"
+          }, 
+          "time": 8.263127
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 7.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.8011666666670001, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Female", 
+          "musical_instrument_experience": 3, 
+          "age": 38, 
+          "sound_labeling_experience": 5, 
+          "participant_id": 979
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7850430000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7850430646300008, 
+            "proximity": "near", 
+            "event_time": 8.21495693537, 
+            "label": "music_playing"
+          }, 
+          "time": 8.214957
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 3.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.32215, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Male", 
+          "musical_instrument_experience": 4, 
+          "age": 27, 
+          "sound_labeling_experience": 5, 
+          "participant_id": 1001
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.971926, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.9719263105300016, 
+            "proximity": "not sure", 
+            "event_time": 8.004949634139999, 
+            "label": "music_playing"
+          }, 
+          "time": 8.004950000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 5.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.9644, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Female", 
+          "musical_instrument_experience": 1, 
+          "age": 27, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 1025
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6561020000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6561018118399993, 
+            "proximity": "not sure", 
+            "event_time": 8.33860185952, 
+            "label": "music_playing"
+          }, 
+          "time": 8.338602
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 9.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.590433333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Female", 
+          "musical_instrument_experience": 6, 
+          "age": 58, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 1031
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6902570000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6902567110300009, 
+            "proximity": "far", 
+            "event_time": 8.27141155758, 
+            "label": "music_playing"
+          }, 
+          "time": 8.271412
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 5.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.338516666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Female", 
+          "musical_instrument_experience": 3, 
+          "age": 26, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 1061
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6901410000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6901408450699993, 
+            "proximity": "far", 
+            "event_time": 8.27141155758, 
+            "label": "music_playing"
+          }, 
+          "time": 8.271412
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 5.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.486066666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 6, 
+          "gender": "Male", 
+          "musical_instrument_experience": 7, 
+          "age": 26, 
+          "sound_labeling_experience": 5, 
+          "participant_id": 884
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6571060000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6571056825199992, 
+            "proximity": "far", 
+            "event_time": 8.300708053320001, 
+            "label": "music_playing"
+          }, 
+          "time": 8.300708
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 2.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.374666666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Male", 
+          "musical_instrument_experience": 3, 
+          "age": 42, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 1087
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6570710000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.657071283589998, 
+            "proximity": "far", 
+            "event_time": 8.30040907208, 
+            "label": "music_playing"
+          }, 
+          "time": 8.300409
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 8.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.7139833333329999, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Male", 
+          "musical_instrument_experience": 5, 
+          "age": 33, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 1093
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.769006, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7690059705600003, 
+            "proximity": "near", 
+            "event_time": 8.23099402944, 
+            "label": "music_playing"
+          }, 
+          "time": 8.230994
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 4.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.334633333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Male", 
+          "musical_instrument_experience": 2, 
+          "age": 29, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 1108
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6736460000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6736456200699994, 
+            "proximity": "not sure", 
+            "event_time": 8.296266570010001, 
+            "label": "music_playing"
+          }, 
+          "time": 8.296267
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 2.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.68515, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Male", 
+          "musical_instrument_experience": 1, 
+          "age": 24, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 1107
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6313280000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.63132778584, 
+            "proximity": "near", 
+            "event_time": 8.35774091303, 
+            "label": "music_playing"
+          }, 
+          "time": 8.357741
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 3.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.2335, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 4, 
+          "gender": "Male", 
+          "musical_instrument_experience": 5, 
+          "age": 28, 
+          "sound_labeling_experience": 5, 
+          "participant_id": 1115
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.781276, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7812758906400017, 
+            "proximity": "near", 
+            "event_time": 8.205131524439999, 
+            "label": "music_playing"
+          }, 
+          "time": 8.205132
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 2.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.21968333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Female", 
+          "musical_instrument_experience": 2, 
+          "age": 25, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 1138
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6588690000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6588686549699982, 
+            "proximity": "far", 
+            "event_time": 8.256667009880001, 
+            "label": "people_talking"
+          }, 
+          "time": 8.256666999
+        }, 
+        {
+          "duration": 1.682163, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6821634524699984, 
+            "proximity": "near", 
+            "event_time": 8.29595895847, 
+            "label": "music_playing"
+          }, 
+          "time": 8.295959
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 10.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.9215833333329999, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Male", 
+          "musical_instrument_experience": 3, 
+          "age": 26, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 1162
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.8395430000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.8395430594799986, 
+            "proximity": "near", 
+            "event_time": 8.130566487160001, 
+            "label": "music_playing"
+          }, 
+          "time": 8.130565999
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 10.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.6807, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Female", 
+          "musical_instrument_experience": 4, 
+          "age": 54, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 748
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.613453, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6134531118400002, 
+            "proximity": "near", 
+            "event_time": 8.29256491084, 
+            "label": "music_playing"
+          }, 
+          "time": 8.292565
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 6.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.42026666666699997, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Female", 
+          "musical_instrument_experience": 3, 
+          "age": 37, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 1200
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6820320000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6820318073499987, 
+            "proximity": "near", 
+            "event_time": 8.30455157415, 
+            "label": "music_playing"
+          }, 
+          "time": 8.304552000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 8.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 2.19575, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Female", 
+          "musical_instrument_experience": 5, 
+          "age": 57, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 1217
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.673764, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6737636280500006, 
+            "proximity": "near", 
+            "event_time": 8.27969656172, 
+            "label": "music_playing"
+          }, 
+          "time": 8.279697
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 9.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.304966666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Male", 
+          "musical_instrument_experience": 4, 
+          "age": 33, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 1226
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.806167, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.8061671657000016, 
+            "proximity": "near", 
+            "event_time": 8.171948335739998, 
+            "label": "music_playing"
+          }, 
+          "time": 8.171948
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 8.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.62755, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Female", 
+          "musical_instrument_experience": 6, 
+          "age": 29, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 1237
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.666749, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6667489681399985, 
+            "proximity": "far", 
+            "event_time": 8.30016583748, 
+            "label": "music_playing"
+          }, 
+          "time": 8.300166
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 5.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.602566666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Female", 
+          "musical_instrument_experience": 5, 
+          "age": 34, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 1244
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6571280000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6571278230399997, 
+            "proximity": "near", 
+            "event_time": 8.30455157415, 
+            "label": "music_playing"
+          }, 
+          "time": 8.304552000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 2.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.848583333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Female", 
+          "musical_instrument_experience": 2, 
+          "age": 26, 
+          "sound_labeling_experience": 3, 
+          "participant_id": 1187
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.920093, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.9200927185000012, 
+            "proximity": "near", 
+            "event_time": 8.079886448169999, 
+            "label": "music_playing"
+          }, 
+          "time": 8.079886
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 7.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.5881, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Female", 
+          "musical_instrument_experience": 6, 
+          "age": 29, 
+          "sound_labeling_experience": 5, 
+          "participant_id": 1329
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.9223100000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.9223095795999985, 
+            "proximity": "far", 
+            "event_time": 8.067349533180002, 
+            "label": "music_playing"
+          }, 
+          "time": 8.067350000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 7.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.00138333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Female", 
+          "musical_instrument_experience": 2, 
+          "age": 54, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 1382
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7658330000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7658332845500002, 
+            "proximity": "near", 
+            "event_time": 8.22902351019, 
+            "label": "music_playing"
+          }, 
+          "time": 8.229024
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 7.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.573266666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Female", 
+          "musical_instrument_experience": 1, 
+          "age": 31, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 1384
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.8472540000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.8472544017099999, 
+            "proximity": "near", 
+            "event_time": 8.11429800094, 
+            "label": "music_playing"
+          }, 
+          "time": 8.114298
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 1.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.559816666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 4, 
+          "gender": "Male", 
+          "musical_instrument_experience": 5, 
+          "age": 50, 
+          "sound_labeling_experience": 3, 
+          "participant_id": 1404
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.756175, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7561745857699993, 
+            "proximity": "near", 
+            "event_time": 8.22194782517, 
+            "label": "music_playing"
+          }, 
+          "time": 8.221948000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 4.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.37125, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Male", 
+          "musical_instrument_experience": 6, 
+          "age": 28, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 1416
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.0936700000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.0936704435800007, 
+            "proximity": "far", 
+            "event_time": 8.87621685998, 
+            "label": "music_playing"
+          }, 
+          "time": 8.876217
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 10.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.41365, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Female", 
+          "musical_instrument_experience": 4, 
+          "age": 56, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 1467
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6737250000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6737254536999995, 
+            "proximity": "near", 
+            "event_time": 8.27961889297, 
+            "label": "music_playing"
+          }, 
+          "time": 8.279619
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 8.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.351683333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Male", 
+          "musical_instrument_experience": 7, 
+          "age": 34, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 1485
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7149960000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7149958575, 
+            "proximity": "near", 
+            "event_time": 8.26312655344, 
+            "label": "music_playing"
+          }, 
+          "time": 8.263127
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 9.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.485066666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 4, 
+          "gender": "Female", 
+          "musical_instrument_experience": 3, 
+          "age": 29, 
+          "sound_labeling_experience": 5, 
+          "participant_id": 1506
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.698493, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.69849252767, 
+            "proximity": "far", 
+            "event_time": 8.29354669125, 
+            "label": "music_playing"
+          }, 
+          "time": 8.293547
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 3.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.65465, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Male", 
+          "musical_instrument_experience": 6, 
+          "age": 24, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 1548
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.706865, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.706865356269999, 
+            "proximity": "near", 
+            "event_time": 8.24651338882, 
+            "label": "music_playing"
+          }, 
+          "time": 8.246513
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 9.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.5548, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Male", 
+          "musical_instrument_experience": 4, 
+          "age": 35, 
+          "sound_labeling_experience": 3, 
+          "participant_id": 1552
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.698501, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6985006325, 
+            "proximity": "not sure", 
+            "event_time": 8.27141155758, 
+            "label": "music_playing"
+          }, 
+          "time": 8.271412
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 1.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.7308, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Female", 
+          "musical_instrument_experience": 6, 
+          "age": 25, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 1621
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.764699, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7646990239000004, 
+            "proximity": "near", 
+            "event_time": 8.18856151616, 
+            "label": "music_playing"
+          }, 
+          "time": 8.188562000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 5.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.81791666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Female", 
+          "musical_instrument_experience": 5, 
+          "age": 33, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 1619
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.9398410000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.9398414799600001, 
+            "proximity": "far", 
+            "event_time": 8.06015852004, 
+            "label": "music_playing"
+          }, 
+          "time": 8.060159
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 6.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.59265, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Male", 
+          "musical_instrument_experience": 2, 
+          "age": 30, 
+          "sound_labeling_experience": 3, 
+          "participant_id": 1623
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6984910000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6984912197500002, 
+            "proximity": "near", 
+            "event_time": 8.26318817744, 
+            "label": "music_playing"
+          }, 
+          "time": 8.263187999000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 3.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.38153333333300005, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Male", 
+          "musical_instrument_experience": 1, 
+          "age": 31, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 1648
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6819060000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6819057376900002, 
+            "proximity": "near", 
+            "event_time": 8.28798156587, 
+            "label": "music_playing"
+          }, 
+          "time": 8.287982000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 10.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.91115, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Female", 
+          "musical_instrument_experience": 3, 
+          "age": 26, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 1647
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.698638, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6986383206199989, 
+            "proximity": "not sure", 
+            "event_time": 8.296266570010001, 
+            "label": "music_playing"
+          }, 
+          "time": 8.296267
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 1.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.235, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Male", 
+          "musical_instrument_experience": 6, 
+          "age": 59, 
+          "sound_labeling_experience": 5, 
+          "participant_id": 1661
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.955815, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.9558147760699995, 
+            "proximity": "near", 
+            "event_time": 8.01888735766, 
+            "label": "music_playing"
+          }, 
+          "time": 8.018887000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 1.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.6721666666670001, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Female", 
+          "musical_instrument_experience": 3, 
+          "age": 42, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 1677
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7078760000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7078759320600003, 
+            "proximity": "near", 
+            "event_time": 8.29212406794, 
+            "label": "music_playing"
+          }, 
+          "time": 8.292124000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 3.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.6986, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 6, 
+          "gender": "Male", 
+          "musical_instrument_experience": 2, 
+          "age": 39, 
+          "sound_labeling_experience": 5, 
+          "participant_id": 1683
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7866000000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7866003712800005, 
+            "proximity": "far", 
+            "event_time": 8.21339962872, 
+            "label": "music_playing"
+          }, 
+          "time": 8.2134
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 6.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 2.82008333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Female", 
+          "musical_instrument_experience": 2, 
+          "age": 36, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 1692
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.666358, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6663580492200012, 
+            "proximity": "near", 
+            "event_time": 8.28690934929, 
+            "label": "music_playing"
+          }, 
+          "time": 8.286909
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 4.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.402466666667, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Female", 
+          "musical_instrument_experience": 1, 
+          "age": 36, 
+          "sound_labeling_experience": 3, 
+          "participant_id": 1731
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.690136, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6901359196400012, 
+            "proximity": "near", 
+            "event_time": 8.263208786729999, 
+            "label": "music_playing"
+          }, 
+          "time": 8.263209
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 4.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.8543, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 1, 
+          "gender": "Male", 
+          "musical_instrument_experience": 1, 
+          "age": 53, 
+          "sound_labeling_experience": 1, 
+          "participant_id": 46
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.706731, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.7067309049899997, 
+            "proximity": "near", 
+            "event_time": 8.27969656172, 
+            "label": "music_playing"
+          }, 
+          "time": 8.279697
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 5.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.5414, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 5, 
+          "gender": "Male", 
+          "musical_instrument_experience": 6, 
+          "age": 26, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 1855
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.698501, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6985006325, 
+            "proximity": "near", 
+            "event_time": 8.26312655344, 
+            "label": "music_playing"
+          }, 
+          "time": 8.263127
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 9.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.36113333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Female", 
+          "musical_instrument_experience": 6, 
+          "age": 39, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 2002
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.715575, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.71557476135, 
+            "proximity": "near", 
+            "event_time": 8.24610463584, 
+            "label": "music_playing"
+          }, 
+          "time": 8.246105
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 10.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.4022, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Female", 
+          "musical_instrument_experience": 3, 
+          "age": 22, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 2032
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6901410000000001, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6901408450699993, 
+            "proximity": "near", 
+            "event_time": 8.28798156587, 
+            "label": "music_playing"
+          }, 
+          "time": 8.287982000000001
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "invisible", 
+        "annotation_task_index": 8.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 1.54593333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/5lwkQ_uxSFY", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 3, 
+          "gender": "Male", 
+          "musical_instrument_experience": 1, 
+          "age": 36, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 2048
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.856314, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.85631375048, 
+            "proximity": "far", 
+            "event_time": 8.12180866046, 
+            "label": "music_playing"
+          }, 
+          "time": 8.121809
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "waveform", 
+        "annotation_task_index": 8.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.4029, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/UXzoSbCDEJI", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 2, 
+          "gender": "Female", 
+          "musical_instrument_experience": 4, 
+          "age": 30, 
+          "sound_labeling_experience": 2, 
+          "participant_id": 2082
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.7316760000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.731676331060001, 
+            "proximity": "not sure", 
+            "event_time": 8.2548415493, 
+            "label": "music_playing"
+          }, 
+          "time": 8.254842
+        }
+      ]
+    }, 
+    {
+      "namespace": "sound_event", 
+      "sandbox": {
+        "visualization": "spectrogram", 
+        "annotation_task_index": 9.0, 
+        "max_polyphony_level": 0, 
+        "class_label_options": [
+          "car_horn_honking", 
+          "dog_barking", 
+          "engine_idling", 
+          "gun_shooting", 
+          "jackhammer_drilling", 
+          "music_playing", 
+          "people_shouting", 
+          "people_talking", 
+          "siren_wailing"
+        ], 
+        "task_length_minutes": 0.244983333333, 
+        "proximity_label_options": [
+          "near", 
+          "far", 
+          "not sure"
+        ], 
+        "tutorial_video_url": "https://www.youtube.com/embed/kdD7kts5eK4", 
+        "gini_polyphony_level": 0
+      }, 
+      "time": 0, 
+      "duration": null, 
+      "annotation_metadata": {
+        "annotation_tools": "CrowdCurio Audio-Annotator", 
+        "curator": {
+          "name": "Mark Cartwright", 
+          "email": "mark.cartwright@nyu.edu"
+        }, 
+        "annotator": {
+          "audio_technology_experience": 7, 
+          "gender": "Male", 
+          "musical_instrument_experience": 4, 
+          "age": 27, 
+          "sound_labeling_experience": 4, 
+          "participant_id": 3807
+        }, 
+        "version": "", 
+        "corpus": "SONYC Seeing Sound", 
+        "annotation_rules": "", 
+        "validation": "", 
+        "data_source": "crowdsourced"
+      }, 
+      "data": [
+        {
+          "duration": 1.6570010000000002, 
+          "confidence": 1.0, 
+          "value": {
+            "event_duration": 1.6570008284999993, 
+            "proximity": "far", 
+            "event_time": 8.31283657829, 
+            "label": "music_playing"
+          }, 
+          "time": 8.312837
+        }
+      ]
+    }
+  ], 
+  "file_metadata": {
+    "jams_version": "0.2.1", 
+    "title": "", 
+    "identifiers": {}, 
+    "release": "", 
+    "duration": 10, 
+    "artist": ""
+  }
+}
