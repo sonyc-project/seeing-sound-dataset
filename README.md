@@ -1,8 +1,8 @@
 # Seeing Sound Dataset
 
-## Created By
-Mark Cartwright*, Ayanna Seals*, Justin Salamon*, Alex Williams^, Stefanie Mikloska^, Duncan MacConnell*, Edith Law^, Juan Pablo Bello*, and Oded Nov*
-* New York University, USA
+## Created by
+Mark Cartwright\*, Ayanna Seals\*, Justin Salamon\*, Alex Williams^, Stefanie Mikloska^, Duncan MacConnell\*, Edith Law^, Juan Pablo Bello\*, and Oded Nov\*  
+\* New York University, USA  
 ^ University of Waterloo, Canada
 
 ## Description
@@ -18,10 +18,10 @@ In this dataset, we varied the soundscape complexity along two dimensions: maxim
 
 There are 60 soundscape audio files and 60 corresponding annotation files.
 
-### Audio Files Included
+### Audio files included
 The audio files are in WAV format and are named as follows: `soundscape-<soundscape_id>_m<max_polyphony_level>_g<gini_polyphony_level>.wav`, e.g. `soundscape-0-m0-g0.wav`
 
-### Annotation Files Included
+### Annotation files included
 The anotation files are in JAMS format and are named as follows: `soundscape-<soundscape_id>_m<max_polyphony_level>_g<gini_polyphony_level>.jams`, e.g. `soundscape-0-m0-g0.jams`, the annotation file for the soundscape in `soundscape-0-m0-g0.wav`
 
 JAMS is a JSON-based audio annotation format. For details about this format and JAMS-specific reading and writing tools, refer to http://pythonhosted.org/jams/
@@ -70,7 +70,7 @@ The soundscapes in this dataset contain the following classes of sound events:
 * *siren wailing*
 
 
-## Please Acknowledge Seeing Sound Dataset in Academic Research
+## Please acknowledge Seeing Sound Dataset in academic research
 When referencing this paper and dataset, please use the following Bibtex citation:
 
 ```
@@ -84,7 +84,7 @@ When referencing this paper and dataset, please use the following Bibtex citatio
     DOI = {10.1145/3134664}}
 ```
 
-## Tools Used to Create This Dataset
+## Tools used to create this dataset
 * [Audio-Annotator](https://github.com/CrowdCurio/audio-annotator)
 * [Scaper](https://github.com/justinsalamon/scaper)
 * [HearingScreening.js](https://github.com/mcartwright/hearing-screening.js)
