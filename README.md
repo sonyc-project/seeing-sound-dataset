@@ -8,7 +8,7 @@ Mark Cartwright\*, Ayanna Seals\*, Justin Salamon\*, Alex Williams^, Stefanie Mi
 ## Description
 This is dataset contains the synthesized soundscapes and crowdsourced audio annotations that accompany the paper, 
 
-> M. Cartwright, A. Seals, J. Salamon, A. Williams, S. Mikloska, D. MacConnell, E. Law, J. Bello, and O. Nov. "Seeing sound: Investigating the effects of visualizations and complexity on crowdsourced audio annotations." In *Proceedings of the ACM on Human-Computer Interaction*, 1(1), 2017.
+> M. Cartwright, A. Seals, J. Salamon, A. Williams, S. Mikloska, D. MacConnell, E. Law, J. Bello, and O. Nov. "Seeing sound: Investigating the effects of visualizations and complexity on crowdsourced audio annotations." In *Proceedings of the ACM on Human-Computer Interaction*, 1(1), 2017. https://doi.org/10.1145/3134664
 
 which investigates the effects of soundscape complexity and sound visualizations on the quality and speed of annotations of sound events (i.e. start time, end time, sound class, and proximity). 
 
