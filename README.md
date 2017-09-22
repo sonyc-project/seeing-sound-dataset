@@ -77,7 +77,7 @@ When referencing this paper and dataset, please use the following Bibtex citatio
   @article{Cartwright:SeeingSound:CSCW:17,
     Author = {Cartwright, M. and Seals, A. and Salamon, J. and Williams, A. and Mikloska, S. and MacConnell, D. and Law, E. and Bello, J.P. and Nov, O.},
     Journal = {Proceedings of the ACM on Human-Computer Interaction},
-    Number = {1},
+    Number = {2},
     Title = {Seeing Sound: Investigating the Effects of Visualizations and Complexity on Crowdsourced Audio Annotations},
     Volume = {1},
     Year = {2017},
